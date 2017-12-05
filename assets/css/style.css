@@ -80,16 +80,23 @@ em {
   Grid
   ========================================
 */
-img {
+#header {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+#penny {
 	display: inline-block;
 	width: 15%;
 	height: auto;
 	z-index: 1;
-}
-#penny {
 	position: absolute;
 }
 #georgie {
+	display: inline-block;
+	width: 15%;
+	height: auto;
+	z-index: 1;
 	position: absolute;
 	right: 0;
 }
