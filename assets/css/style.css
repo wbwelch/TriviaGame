@@ -6,14 +6,15 @@
   Custom Styles
 ========================================
 */
+
 html {
   height: 100%;
 }
 body {
 	background-image: url(../images/backgrounds/black_linen_v2_@2X.png);
- 	background-size: 300px;
-  	width: 600px;
-  	height: 600px;
+ 	background-size: 100%;
+  	min-height: 100%;
+	width: 100%;
 	position: absolute;
 	height: auto;
 }
@@ -23,19 +24,60 @@ body {
   Typogrophy
  ========================================
 */
-
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-p {}
+h1,
+h2,
+h3,
+h4 {
+	font: 700 28px/34px Times, "Times New Roman", serif;
+	padding: 5px;
+	text-align: center;
+}
+h1 {
+	color: white;
+	margin: 10px 5px;
+}
+h2 {
+	font: 700 22px/26px;
+}
+h3 {
+	color: #4D4B4B;
+	font: 700 18px/22px;
+}
+h4 {
+	color: white;
+	font-size: 20px;
+}
+p {
+	color: white;
+	font: 300 16px/20px Times, "Times New Roman", serif;
+	padding: 5px;
+	text-align: center;
+}
+em {
+	font-style: italic;
+}
 
 /*
  ========================================
   Grid
   ========================================
 */
-
+#start-button {
+	display: block;
+	margin: 20px auto;
+	padding: 10px;
+}
+.container {
+	display: block;
+	background-color:#8C1212;
+	width: 75%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	height: suto;
+	top: 50px;
+	padding: 20px;
+}
 
 /* 
 ========================================
