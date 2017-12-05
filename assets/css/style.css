@@ -126,6 +126,11 @@ em {
 	padding: 10px;
 	z-index: 2;
 }
+#correct-answers,
+#incorrect-answers,
+#unanswered {
+	display: inline-block;
+}
 /* 
 ========================================
  Images

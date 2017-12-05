@@ -2,9 +2,12 @@
 $(document).ready(function() {
 
 
- 	$("#welcome-screen").hide();
-	$("#result-screen").hide();
+ 	$("#result-screen").hide();
+	$("#game-screen").hide();
    
 	$("#countdown").text("29");
+	$("#correct-answers").text("4");
+	$("#incorrect-answers").text("2");
+	$("#unanswered").text("2");
 	
 }); //end of ready function
