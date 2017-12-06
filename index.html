@@ -35,72 +35,70 @@
 		<div id=first-question><h4>What's the name of the killer clown in Stephen King's novel, <em>IT</em>?</h4>
 			
 			<div class="answer-boxes">
-				<input type="radio" class="radio-button"> Torchy
-				<input type="radio" class="radio-bitton"> Quarterdumb
-				<input type="radio" class="radio-bitton"> Pennywise
-				<input type="radio" class="radio-bitton"> Boinko
-			</div></div>
+				<input type="radio" name="q1" class="radio-button" id="wrongA"> Torchy
+				<input type="radio" name="q1" class="radio-button" id="wrongB"> Quarterdumb
+				<input type="radio" name="q1" class="radio-button" id="correct1"> Pennywise
+				<input type="radio" name="q1" class="radio-button" id="wrongC"> Boinko
+			</div>
 
 		<img id="georgie" src="assets/images/georgie.png" alt="Georgie from 'It'">
 		
 		<h4>Which King protagonist went crazy and killed<br> most of her classmates and teachers during prom?</h4>
 		
 		<div class="answer-boxes">
-			<input type="radio" class="radio-button"> Sandy
-			<input type="radio" class="radio-bitton"> Dolores
-			<input type="radio" class="radio-bitton"> Sherrie
-			<input type="radio" class="radio-bitton"> Carrie
+			<input type="radio" na2me="q2" class="radio-button" id="wrongD"> Sandy
+			<input type="radio" na3me="q2" class="radio-button" id="wrongE"> Dolores
+			<input type="radio" name="q2" class="radio-button" id="wrongF"> Sherrie
+			<input type="radio" name="q2" class="radio-button" id="correct2"> Carrie
 			</div>
 		
 		<h4>Stephen King regularly contributed to <em>Dave's Rag</em> in high school.</h4>
 		
 		<div class="answer-boxes">
-			<input type="radio" class="radio-button"> True
-			<input type="radio" class="radio-bitton"> False
+			<input type="radio" name="q3" class="radio-button" id="correct3"> True
+			<input type="radio" name="q3" class="radio-bitton" id="wrongG"> False
 			</div>
 		
 		<h4>What year and model car was featured <br>in the movie <em>Christine</em> based on a Stephen King book?</h4>
 		
 		<div class="answer-boxes">
-			<input type="radio" class="radio-button"> 1962 Ford Mustang
-			<input type="radio" class="radio-bitton"> 1957 Chevy Chevelle
-			<input type="radio" class="radio-bitton"> 1951 Jaquar XK 120
-			<input type="radio" class="radio-bitton"> 1958 Plymouth Fury
+			<input type="radio" name="q4" class="radio-button" id="wrongH"> 1962 Ford Mustang
+			<input type="radio" name="q4" class="radio-button" id="wrongI"> 1957 Chevy Chevelle
+			<input type="radio" name="q4" class="radio-button" id="wrongJ"> 1951 Jaquar XK 120
+			<input type="radio" name="q4" class="radio-button" id="corrcet4"> 1958 Plymouth Fury
 			</div>
 		
 		<h4>Mike Hanlon made seven phone calls in Stephen King's novel, <em>IT</em>.</h4>
 		
 		<div class="answer-boxes">
-			<input type="radio" class="radio-button"> True
-			<input type="radio" class="radio-bitton"> False
+			<input type="radio" name="q5" class="radio-button" id="wrongK"> True
+			<input type="radio" name="q5" class="radio-button" id="correct5"> False
 		</div>
 		
 		<h4>What's the name of Stephen King's western/fantasy saga?</h4>
 		
 		<div class="answer-boxes">
-			<input type="radio" class="radio-button"> <em>The Dark Tower</em>
-			<input type="radio" class="radio-bitton"> <em>The Darkest Hour</em>
-			<input type="radio" class="radio-bitton"> <em>The Dark Knight</em>
-			<input type="radio" class="radio-bitton"> <em>The Dark Travels</em>
+			<input type="radio" name="q6"class="radio-button" id="correct6"> <em>The Dark Tower</em>
+			<input type="radio" name="q6"class="radio-button" id="wrongL"> <em>The Darkest Hour</em>
+			<input type="radio" name="q6"class="radio-button" id="wrongM"> <em>The Dark Knight</em>
+			<input type="radio" name="q6"class="radio-button" id="wrongN"> <em>The Dark Travels</em>
 		</div>
 		
 		<h4>Which of the below is a Stephen King pseudonym?</h4>
 		
 		<div class="answer-boxes">
-			<input type="radio" class="radio-button"> Dick Hallorann
-			<input type="radio" class="radio-bitton"> Richard Bachman
-			<input type="radio" class="radio-bitton"> Sam Paul
-			<input type="radio" class="radio-bitton"> Benjamin Sanders
+			<input type="radio" name="q7" class="radio-button" id="wrongO"> Dick Hallorann
+			<input type="radio" name="q7" class="radio-button" id="correct7"> Richard Bachman
+			<input type="radio" name="q7" class="radio-button" id="wrongP"> Sam Paul
+			<input type="radio" name="q7" class="radio-button" id="wrongQ"> Benjamin Sanders
 		</div>
 		
 		<h4>One of Stephen King's jobs prior to publication was as a high school teacher.</h4>
 		
 		<div class="answer-boxes">
-			<input type="radio" class="radio-button"> True
-			<input type="radio" class="radio-bitton"> Flase
+			<input type="radio" name="q8" class="radio-button" id="correct8"> True
+			<input type="radio" name="q8" class="radio-button" id="wrongR"> Flase
 		</div>
-		
-	</div>
 	
 	<div id="result-screen" class="container">
 		
@@ -110,6 +108,7 @@
 		<h4>Correct Answers: <div id="correct-answers"></div></h4>
 		<h4>Incorrect Answers: <div id="incorrect-answers"></div></h4>
 		<h4>Unanswered: <div id="unanswered"></div></h4>
+		<button id=reset-button><h2>Try Again!</h2></button>
 		
 	</div>
 	

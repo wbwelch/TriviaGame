@@ -106,6 +106,11 @@ em {
 	margin: 20px auto;
 	padding: 10px;
 }
+#reset-button {
+	display: block;
+	margin: 20px auto;
+	padding: 10px;
+}
 .container {
 	display: block;
 	background-color:#8C1212;
