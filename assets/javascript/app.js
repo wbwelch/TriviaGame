@@ -12,7 +12,7 @@ $(document).ready(function() {
 		correctAnswers: 0,
 		incorrectAnswers: 0,
 		unanswered: 8,
-		seconds: 20,
+		seconds: 90,
 		//done: false,
 		
 		welcome: function() {
@@ -33,7 +33,7 @@ $(document).ready(function() {
 				gameOver.show()
 				playerInteract.answerCheck()
 				playerInteract.scoreCount()
-				},	20000);
+				},	90000);
 		
 			var intervalVariable = setInterval(playerInteract.decrement, 1000);
 			var seconds = playerInteract.seconds;
