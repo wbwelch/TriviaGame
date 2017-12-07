@@ -33,6 +33,7 @@ $(document).ready(function() {
 				gameOver.show()
 				playerInteract.answerCheck()
 				playerInteract.scoreCount()
+				setTimeout.clearTimeout()
 				},	90000);
 		
 			var intervalVariable = setInterval(playerInteract.decrement, 1000);
@@ -198,7 +199,10 @@ $(document).ready(function() {
 		playerInteract.initiate()
 	});
 	
-	
+	$("#reset-button").on("click", function(event) {
+	 	window.location.reload();
+		
+	});
 	//initially write second to screen
 	$("#countdown").text(playerInteract.seconds); 
 
