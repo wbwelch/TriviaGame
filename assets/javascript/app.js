@@ -1,7 +1,8 @@
 // JavaScript Document
 $(document).ready(function() {
-	$("#result-screen").hide();
-	$("#game-screen").hide();
+	var welcome = $("#welcome-screen")
+	var gameOver = $("#result-screen")
+	var game = $("#game-screen")
 	
 	var playerInteract = {
 		correctAnswers: 0,
@@ -10,28 +11,40 @@ $(document).ready(function() {
 		seconds: 10,
 		//done: false,
 		
+		welcome: function() {
+			gameOver.toggle();
+			game.hide();
+		},
+		
+		initiate: function() {
+			welcome.hide();
+			game.show();
+			playerInteract.timer();
+		},
+		
 		timer: function() {
-			var windowTimeout = setTimeout(playerInteract.gameOver, 10000);
+			var windowTimeout = setTimeout(function() {
+				//playerInteract.gameOver() 
+				game.hide()
+				playerInteract.answerCheck()
+				playerInteract.gameOverLoad()
+				},	10000);
+		
 			var intervalVariable = setInterval(playerInteract.decrement, 1000);
 			var seconds = playerInteract.seconds;
-			if (seconds === 0) {
-				clearInterval(intervalVariable);
-			};
+			
 		},
 				
 		decrement: function () {
-			if (playerInteract.seconds > 0) {
+			if (playerInteract.seconds >= 2) {
 					playerInteract.seconds--;
 					console.log("seconds: " + playerInteract.seconds);
 					$("#countdown").text(playerInteract.seconds);
 				}
-			//else if (playerInteract.done == false) {
-				//playerInteract.answerCheck();
-				//playerInteract.done = true
-			//}
+			
 			
 		},
-			//add correct items by id's per question group
+			
 		answerCheck: function() {
 			if ($("#correct1").is(':checked')) {
 				//$("#result-screen").show();
@@ -146,29 +159,26 @@ $(document).ready(function() {
 				console.log(playerInteract.unanswered);
 			};
 		},
-		
-		gameOver: function () {
-			$("#game-screen").hide();
-			$("#result-screen").show();
-			playerInteract.answerCheck();
-			//why did this stop working
-			//$("#result-screen").show();
-		}
+		gameOverLoad: function() {
+			gameOver.show();
+			console.log("gameover");
+	}
+	
 	};
 		
-
+	 window.onload = playerInteract.welcome;
 	
 	//on-click initiate game and timer
-	$("#start-button").on("click", function() {
-		$("#welcome-screen").hide();
-		$("#game-screen").show();
-		playerInteract.timer();
-		
+	$("#start-button").on("click", function(event) {
+	 	//event.preventDefault()
+		playerInteract.initiate()
 	});
 	
 	
 	//initially write second to screen
 	$("#countdown").text(playerInteract.seconds); 
+	
+
 
 	
 
